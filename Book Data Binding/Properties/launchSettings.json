@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Book Data Binding (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Book Data Binding (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

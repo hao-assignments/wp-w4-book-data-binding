@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Book_Data_Binding.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Book_Data_Binding"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Name: " Margin="0 0 5 0"/>
+            <TextBlock
+                Name="nameTextBlock"
+                Text="{x:Bind ViewModel.CurrentBook.Name, Mode=OneWay}"
+            />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Cover: " Margin="0 0 5 0"/>
+            <TextBlock
+                Name="coverTextBlock"
+                Text="{x:Bind ViewModel.CurrentBook.Cover, Mode=OneWay}"
+            />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Author: " Margin="0 0 5 0"/>
+            <TextBlock
+                Name="authorTextBlock"
+                Text="{x:Bind ViewModel.CurrentBook.Author, Mode=OneWay}"
+            />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Year: " Margin="0 0 5 0"/>
+            <TextBlock
+                Name="yearTextBlock"
+                Text="{x:Bind ViewModel.CurrentBook.Year, Mode=OneWay}"
+            />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="ISBN: " Margin="0 0 5 0"/>
+            <TextBlock
+                Name="isbnTextBlock"
+                Text="{x:Bind ViewModel.CurrentBook.ISBN, Mode=OneWay}"
+            />
+        </StackPanel>
+    </StackPanel>
+</Window>
